@@ -1,0 +1,41 @@
+# Ignore ALL node_modules in any subfolder
+**/node_modules/
+
+# Ignore Hardhat, backend, and root cache/artifacts/build/etc
+artifacts/
+cache/
+coverage/
+typechain/
+build/
+dist/
+backend/cache/
+backend/build/
+backend/artifacts/
+backend/coverage/
+backend/typechain/
+
+# Environment files
+.env
+.env.*
+!.env.sample
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ABI auto-gen
+backend/abi/*.json
+
+# OS/junk files
+.DS_Store
+Thumbs.db
+
+# VSCode/editor files
+.vscode/
+*.tsbuildinfo
+
+# Ignore lock files if you don't want to commit them (optional)
+package-lock.json
+backend/package-lock.json
